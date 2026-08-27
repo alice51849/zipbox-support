@@ -5,18 +5,18 @@ The public support, privacy and terms pages for **Zipbox** (App Store:
 
     index.html     what Zipbox does, privacy promise, contact
     support.html   getting started, FAQ, troubleshooting
-    privacy.html   privacy policy and purchase handling
+    privacy.html   privacy policy and paid-download handling
     terms.html     terms of use
     samples/       sample archives for App Review (unlisted, linked only from
                    the review notes)
     sitemap.xml, robots.txt, .nojekyll
 
-Every page is a single self-contained file: inline CSS, inline JavaScript,
-inline translations. There is no framework, no CDN, no web font, no analytics,
-no cookie and no third-party request of any kind — the same promise the app
-makes. The language is picked from the browser and can be changed with the
-selector in the header or with `?lang=<locale>`; the choice is remembered in
-`localStorage` only.
+Every page is a single self-contained file: inline CSS, inline JavaScript and
+inline translations. There is no framework, CDN, web font, analytics or
+cookie. These public pages are opened by the system outside Zipbox; the app
+itself makes no network request. The language is picked from the browser and
+can be changed with the selector in the header or with `?lang=<locale>`; the
+choice is remembered in `localStorage` only.
 
 ## Do not hand-edit the HTML
 
