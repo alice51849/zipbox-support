@@ -23,17 +23,16 @@ choice is remembered in `localStorage` only.
 `index.html`, `support.html`, `privacy.html` and `terms.html` are generated.
 Edit the copy in `../marketing/src/copy/*.json`, then:
 
-    python3 marketing/build.py     # rewrites docs/*.html and the metadata pack
+    python3 marketing/build.py     # rewrites SupportSiteRepo/*.html and metadata
     python3 marketing/validate.py  # 50 locales, field limits, banned wording
 
 `marketing/make_samples.py` regenerates `samples/`.
 
 ## Publishing
 
-Either serve this folder from the app repository (Settings → Pages → Source:
-`main` / `/docs`), or copy it into a repository named `zipbox-support` and
-serve from its root. Both give the canonical URLs the pages and the App Store
-metadata already point at:
+This folder is the independent `zipbox-support` repository and is served from
+its root. It gives the canonical URLs the pages and App Store metadata already
+point at:
 
     https://alice51849.github.io/zipbox-support/
     https://alice51849.github.io/zipbox-support/support.html   -> ASC Support URL
@@ -48,4 +47,4 @@ locales of `supportUrl` / `privacyPolicyUrl` come from that one constant.
 
 `hourstag.app@gmail.com` is the only address that may appear on this site or in
 the app. `marketing/validate.py` fails the build if any other address appears
-anywhere under `marketing/` or `docs/`.
+anywhere under `marketing/` or `SupportSiteRepo/`.
