@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>분할 압축 푸는 법｜.part1.rar .7z.001 .z01 아이폰에서 합치기</title>
+<meta name="description" content=".part1.rar, .7z.001, .z01 같은 분할 압축은 모든 파트를 같은 폴더에 두고 이름을 바꾸지 않은 채 첫 파트를 열면 풀립니다. 아이폰 순서와 파트 누락 시 오류 대처법을 정리했습니다.">
+<link rel="canonical" href="https://open.cait518.cc/zipbox-support/split-archive-part1.ko.html">
+<link rel="alternate" hreflang="ja" href="https://open.cait518.cc/zipbox-support/split-archive-part1.ja.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://open.cait518.cc/zipbox-support/split-archive-part1.zh-Hant.html">
+<link rel="alternate" hreflang="en-US" href="https://open.cait518.cc/zipbox-support/split-archive-part1.html">
+<link rel="alternate" hreflang="ko" href="https://open.cait518.cc/zipbox-support/split-archive-part1.ko.html">
+<link rel="alternate" hreflang="x-default" href="https://open.cait518.cc/zipbox-support/split-archive-part1.html">
+<meta property="og:title" content="분할 압축 푸는 법｜.part1.rar .7z.001 .z01 아이폰에서 합치기">
+<meta property="og:description" content=".part1.rar, .7z.001, .z01 같은 분할 압축은 모든 파트를 같은 폴더에 두고 이름을 바꾸지 않은 채 첫 파트를 열면 풀립니다. 아이폰 순서와 파트 누락 시 오류 대처법을 정리했습니다.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://open.cait518.cc/zipbox-support/split-archive-part1.ko.html">
+<meta name="apple-itunes-app" content="app-id=6806776579">
+<style>
+:root{color-scheme:light dark;--bg:#fbfaf7;--fg:#1d1d1f;--muted:#5f6368;--line:rgba(128,128,128,.22);--accent:#2f6fde;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--fg:#ececf0;--muted:#a3a3ab;--card:#1d1d21;--accent:#7aa7ff}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","PingFang TC","Noto Sans CJK TC","Apple SD Gothic Neo",Roboto,sans-serif}
+a{color:var(--accent)}
+.helpdoc{max-width:820px;margin:0 auto;padding:28px 16px 64px}
+.helpdoc h1{font-size:clamp(26px,4.4vw,36px);line-height:1.3;margin:.2em 0 .4em}
+.helpdoc h2{font-size:clamp(19px,2.8vw,24px);margin:2.1em 0 .6em;scroll-margin-top:16px}
+.helpdoc h3{font-size:17px;margin:1.5em 0 .35em}
+.helpdoc .lede{font-size:17.5px;color:var(--muted);margin:0 0 1.4em}
+.helpdoc .hd-nav{display:flex;flex-wrap:wrap;gap:14px;font-size:14px;margin:0 0 20px}
+.helpdoc .hd-toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;padding:0;list-style:none}
+.helpdoc .hd-toc a{display:inline-block;padding:5px 12px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;text-decoration:none}
+.helpdoc .tbl{overflow-x:auto;margin:.8em 0}
+.helpdoc table{width:100%;border-collapse:collapse;font-size:15px}
+.helpdoc th,.helpdoc td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.helpdoc th{font-weight:650;white-space:nowrap}
+.helpdoc .box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:1em 0}
+.helpdoc .cta{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:2.4em 0 1em}
+.helpdoc .cta a.btn{display:inline-block;margin:6px 0;padding:11px 20px;border-radius:999px;background:var(--accent);color:#fff;font-weight:650;text-decoration:none}
+.helpdoc .hd-q{margin:1.4em 0 .3em;font-weight:650;font-size:16.5px}
+.helpdoc .hd-a{margin:0 0 .2em}
+.helpdoc .hd-note{font-size:13px;color:var(--muted);margin-top:2.6em;border-top:1px solid var(--line);padding-top:14px}
+.helpdoc ul,.helpdoc ol{padding-left:1.25em}
+.helpdoc li{margin:.3em 0}
+@media print{.hd-nav,.cta,.hd-toc{display:none}body{background:#fff;color:#000}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "분할 압축 푸는 법｜.part1.rar .7z.001 .z01 아이폰에서 합치기", "description": ".part1.rar, .7z.001, .z01 같은 분할 압축은 모든 파트를 같은 폴더에 두고 이름을 바꾸지 않은 채 첫 파트를 열면 풀립니다. 아이폰 순서와 파트 누락 시 오류 대처법을 정리했습니다.", "inLanguage": "ko", "mainEntityOfPage": "https://open.cait518.cc/zipbox-support/split-archive-part1.ko.html", "dateModified": "2026-10-15", "author": {"@type": "Organization", "name": "hourstag"}, "about": {"@type": "SoftwareApplication", "name": "Zipbox 압축풀기: ZIP RAR 7z", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://apps.apple.com/app/id6806776579"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ko", "mainEntity": [{"@type": "Question", "name": "분할 압축은 먼저 합쳐야 하나요?", "acceptedAnswer": {"@type": "Answer", "text": "대부분 필요 없습니다. 지원 앱으로 첫 파트를 열면 나머지 파트를 자동으로 차례대로 읽습니다."}}, {"@type": "Question", "name": "파트 하나가 없어도 일부는 풀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": "빠진 파트보다 앞에 들어 있는 파일은 풀리는 경우도 있지만 보장되지 않습니다. 빠진 파트를 다시 받는 것이 확실합니다."}}, {"@type": "Question", "name": "아이폰 기본 ‘파일’ 앱으로 분할 ZIP을 풀 수 있나요?", "acceptedAnswer": {"@type": "Answer", "text": ".z01 등으로 나뉜 분할 ZIP은 일반 .zip과 달라서 ‘파일’ 앱으로는 풀 수 없습니다. 지원 앱을 사용하세요."}}, {"@type": "Question", "name": "확장자가 .001인 파일은 뭔가요?", "acceptedAnswer": {"@type": "Answer", "text": "대개 7z나 분할 도구로 나눈 파일입니다. .7z.001이면 7z 분할 압축이고 .001부터 엽니다."}}]}</script>
+</head>
+<body>
+<main class="helpdoc">
+<nav class="hd-nav"><a href="./">지원 홈</a><a href="support.html">도움말 및 FAQ</a><a href="https://apps.apple.com/kr/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_jp_seo&amp;mt=8">Zipbox 압축풀기: ZIP RAR 7z</a></nav>
+<h1>분할 압축(.part1.rar / .7z.001 / .z01) 합쳐서 푸는 방법</h1>
+<p class="lede">분할 압축은 먼저 하나로 ‘합치는’ 작업이 대부분 필요 없습니다. <strong>모든 파트를 같은 폴더에 두고, 파일 이름을 그대로 둔 채, 첫 번째 파트를 열면</strong> 분할 압축을 지원하는 앱이 나머지 파트를 차례로 읽습니다. 아이폰 기본 ‘파일’ 앱은 분할 압축을 풀지 못하므로 지원 앱이 필요합니다.</p>
+<p><strong>이 페이지의 내용</strong></p>
+<ul class="hd-toc"><li><a href="#types">분할 파일 이름 규칙과 열어야 할 파일</a></li><li><a href="#rules">성공하려면 지켜야 할 세 가지</a></li><li><a href="#steps">아이폰에서 푸는 순서 (Zipbox 예시)</a></li><li><a href="#errors">파트가 없을 때 나오는 오류와 대처</a></li><li><a href="#send">내가 분할 파일을 보낼 때</a></li><li><a href="#faq">자주 묻는 질문</a></li></ul>
+<h2 id="types">분할 파일 이름 규칙과 열어야 할 파일</h2>
+<p>형식마다 파트 이름 붙이는 방식이 달라서, 열어야 할 ‘첫 파트’도 다릅니다.</p><div class="tbl"><table><tr><th>파일 이름 예</th><th>형식</th><th>열 파일</th></tr><tr><td>photos.part1.rar, photos.part2.rar …</td><td>RAR (새 방식)</td><td>.part1.rar</td></tr><tr><td>photos.rar, photos.r00, photos.r01 …</td><td>RAR (예전 방식)</td><td>.rar</td></tr><tr><td>photos.7z.001, photos.7z.002 …</td><td>7z</td><td>.7z.001</td></tr><tr><td>photos.z01, photos.z02 … photos.zip</td><td>ZIP</td><td>.zip (.z01 등은 옆에 둠)</td></tr></table></div><p>ZIP 분할은 마지막 파트가 .zip이라는 점에 주의하세요. .z01을 직접 여는 것이 아니라 같은 폴더의 .zip을 엽니다.</p>
+<h2 id="rules">성공하려면 지켜야 할 세 가지</h2>
+<ol><li><strong>모든 파트를 같은 폴더에</strong>: 한 파트라도 ‘다운로드’ 폴더나 iCloud Drive의 다른 폴더에 남아 있으면 도중에 멈춥니다.</li><li><strong>파일 이름을 바꾸지 않기</strong>: 중복 저장으로 ‘photos.part1 (1).rar’처럼 번호가 붙으면 다음 파트를 찾지 못합니다. ‘(1)’을 지워 원래 이름으로 돌리세요.</li><li><strong>첫 파트부터 열기</strong>: part2나 .002부터 열면 오류가 나거나 일부만 풀립니다.</li></ol><div class="box">iCloud Drive에 있는 경우 구름 아이콘이 붙은 파트는 아직 기기에 내려받지 않은 상태입니다. 탭해서 다운로드를 끝낸 뒤 여세요.</div>
+<h2 id="steps">아이폰에서 푸는 순서 (Zipbox 예시)</h2>
+<ol><li>메일이나 Safari로 받은 모든 파트를 ‘파일’ 앱의 같은 폴더에 저장합니다.</li><li>이름과 크기를 확인합니다(마지막 파트를 빼면 보통 크기가 비슷합니다).</li><li>첫 파트(.part1.rar / .7z.001 / .zip)를 길게 눌러 ‘공유’ → Zipbox를 선택합니다.</li><li>파일 목록이 보이면 필요한 것만 고르거나 전부 풉니다.</li><li>비밀번호가 걸려 있다면 이 단계에서 입력하라는 창이 뜹니다.</li></ol><p>Zipbox는 ZIP, RAR, 7z의 분할 압축과 비밀번호 압축을 지원하며 모든 처리를 기기 안에서 합니다.</p>
+<h2 id="errors">파트가 없을 때 나오는 오류와 대처</h2>
+<div class="tbl"><table><tr><th>증상</th><th>흔한 원인</th><th>대처</th></tr><tr><td>‘다음 볼륨을 찾을 수 없음’ 같은 오류</td><td>파트 누락 또는 다른 폴더에 있음</td><td>모든 파트를 한 폴더로 이동</td></tr><tr><td>풀다가 중간에 멈춤</td><td>중간 파트의 다운로드 미완료</td><td>크기가 작은 파트를 다시 저장</td></tr><tr><td>‘손상됨’, CRC 오류</td><td>전송 중 파트 손상</td><td>보낸 사람에게 그 파트만 다시 요청</td></tr><tr><td>첫 파트를 열어도 반응 없음</td><td>파일 이름이 바뀜</td><td>‘(1)’ 등을 지워 원래 이름으로</td></tr></table></div><p>번호를 보면 어느 파트가 빠졌는지 알 수 있습니다. part1, part2, part4만 있다면 part3이 없는 것입니다. 보낸 사람에게 ‘part3만 다시 보내 주세요’라고 구체적으로 말하면 빨리 해결됩니다.</p>
+<h2 id="send">내가 분할 파일을 보낼 때</h2>
+<p>메일 첨부 용량을 넘는 파일은 분할해서 보내는 방법이 있습니다. Zipbox로 AES-256 암호화와 분할 저장을 지원하는 ZIP, 7z를 만들 수 있습니다. 받는 사람에게 ‘모든 파트를 같은 폴더에 두고 첫 파트를 여세요’라고 한 줄 덧붙이면 주고받을 일이 줄어듭니다.</p>
+<div class="cta">
+<p><strong>iPhone에서 바로 해 보려면</strong> Zipbox는 ZIP, RAR, 7z의 분할 압축과 비밀번호 압축을 아이폰 안에서 풀고, AES-256 암호화 분할 ZIP·7z도 만들 수 있습니다.</p>
+<p><a class="btn" href="https://apps.apple.com/kr/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_jp_seo&amp;mt=8">App Store에서 Zipbox 압축풀기: ZIP RAR 7z 보기</a></p>
+<p>Zipbox 압축풀기: ZIP RAR 7z을(를) 사용 중이라면 App Store에서 평가나 리뷰를 남길 수 있습니다. <a href="https://apps.apple.com/app/id6806776579?action=write-review">리뷰 작성</a></p>
+</div>
+<h2 id="faq">자주 묻는 질문</h2>
+<p class="hd-q">분할 압축은 먼저 합쳐야 하나요?</p>
+<p class="hd-a">대부분 필요 없습니다. 지원 앱으로 첫 파트를 열면 나머지 파트를 자동으로 차례대로 읽습니다.</p>
+<p class="hd-q">파트 하나가 없어도 일부는 풀 수 있나요?</p>
+<p class="hd-a">빠진 파트보다 앞에 들어 있는 파일은 풀리는 경우도 있지만 보장되지 않습니다. 빠진 파트를 다시 받는 것이 확실합니다.</p>
+<p class="hd-q">아이폰 기본 ‘파일’ 앱으로 분할 ZIP을 풀 수 있나요?</p>
+<p class="hd-a">.z01 등으로 나뉜 분할 ZIP은 일반 .zip과 달라서 ‘파일’ 앱으로는 풀 수 없습니다. 지원 앱을 사용하세요.</p>
+<p class="hd-q">확장자가 .001인 파일은 뭔가요?</p>
+<p class="hd-a">대개 7z나 분할 도구로 나눈 파일입니다. .7z.001이면 7z 분할 압축이고 .001부터 엽니다.</p>
+
+
+<h2 id="related">관련 가이드</h2>
+<ul><li><a href="open-rar-7z-on-iphone.ko.html">아이폰에서 RAR·7z 압축 해제하는 방법</a></li><li><a href="password-protected-zip-iphone.ko.html">비밀번호 걸린 ZIP을 아이폰에서 여는 방법</a></li><li><a href="line-gmail-zip-wont-open.ko.html">카카오톡·Gmail로 받은 ZIP이 아이폰에서 안 열릴 때</a></li></ul>
+<p class="hd-note">이 페이지는 Zipbox 압축풀기: ZIP RAR 7z 개발자가 AI의 도움을 받아 작성했으며 App Store 소개 내용과 대조했습니다. 최종 업데이트: 2026-10-15.</p>
+</main>
+</body>
+</html>
