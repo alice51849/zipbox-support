@@ -45,12 +45,13 @@ a{color:var(--accent)}
 .helpdoc li{margin:.3em 0}
 @media print{.hd-nav,.cta,.hd-toc{display:none}body{background:#fff;color:#000}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LINE・Gmailで届いたZIPが開けない（iPhone）原因と対処法", "description": "LINEやGmailで届いたZIPがiPhoneで開けないときの原因を一覧にし、ファイルAppへの保存手順から文字化け・RAR・分割・パスワード・期限切れまで順番にチェックできるようにまとめました。", "inLanguage": "ja", "mainEntityOfPage": "https://open.cait518.cc/zipbox-support/line-gmail-zip-wont-open.ja.html", "dateModified": "2026-10-15", "author": {"@type": "Organization", "name": "hourstag"}, "about": {"@type": "SoftwareApplication", "name": "Zipbox 解凍：ZIP RAR 7z対応", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://apps.apple.com/app/id6806776579"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LINE・Gmailで届いたZIPが開けない（iPhone）原因と対処法", "description": "LINEやGmailで届いたZIPがiPhoneで開けないときの原因を一覧にし、ファイルAppへの保存手順から文字化け・RAR・分割・パスワード・期限切れまで順番にチェックできるようにまとめました。", "inLanguage": "ja", "mainEntityOfPage": "https://open.cait518.cc/zipbox-support/line-gmail-zip-wont-open.ja.html", "dateModified": "2026-10-15", "author": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "publisher": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "about": {"@type": "SoftwareApplication", "name": "Zipbox 解凍：ZIP RAR 7z対応", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://apps.apple.com/app/id6806776579"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ja", "mainEntity": [{"@type": "Question", "name": "LINEのトーク画面でZIPの中身を見られますか？", "acceptedAnswer": {"@type": "Answer", "text": "トーク画面では中身は表示されません。ファイルAppに保存してから開いてください。"}}, {"@type": "Question", "name": "GmailでZIPの中身がプレビューできません。", "acceptedAnswer": {"@type": "Answer", "text": "ZIPはGmailのプレビュー対象外のことが多いです。共有ボタンからファイルAppに保存して開いてください。"}}, {"@type": "Question", "name": "保存したのに見つかりません。", "acceptedAnswer": {"@type": "Answer", "text": "ファイルAppの「ブラウズ」で「このiPhone内」と「iCloud Drive」の両方を確認し、検索欄でファイル名を入力すると見つけやすくなります。"}}, {"@type": "Question", "name": "文字化けしたファイルは壊れていますか？", "acceptedAnswer": {"@type": "Answer", "text": "ほとんどの場合、壊れているのはファイル名の表示だけで、中身は正常です。"}}]}</script>
 </head>
 <body>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">当サイトは掲載アプリの開発者であるLumi Studioが運営し、自社アプリを紹介しています。</p>
 <main class="helpdoc">
-<nav class="hd-nav"><a href="./">サポートトップ</a><a href="support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_jp_seo&amp;mt=8">Zipbox 解凍：ZIP RAR 7z対応</a></nav>
+<nav class="hd-nav"><a href="./">サポートトップ</a><a href="support.html">ヘルプ・よくある質問</a><a href="https://apps.apple.com/jp/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_jp_seo&amp;mt=8">Zipbox 解凍：ZIP RAR 7z対応</a><a href="https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&amp;referrer=utm_source%3Dbm_zipbox_jp_seo%26utm_campaign%3Dzipbox" rel="noopener" data-ls-play="nav">Google Play</a></nav>
 <h1>LINE・Gmailで届いたZIPがiPhoneで開けないときの対処法</h1>
 <p class="lede">LINEやGmailで受け取ったZIPが開けない原因の多くは、<strong>ファイルAppに保存できていない、ダウンロードが途中で止まっている、実はZIPではない（RAR・7z）</strong>のどれかです。ふつうのZIPなら、ファイルAppに保存してタップするだけで解凍できます。下の対照表で症状から原因を探し、上から順に確認してください。</p>
 <p><strong>このページの内容</strong></p>
@@ -70,6 +71,8 @@ a{color:var(--accent)}
 <div class="cta">
 <p><strong>iPhone でそのまま試すなら</strong> LINEやメールで届いたRAR・7z・分割・パスワード付きのファイルも、Zipboxなら共有シートから開いて、中身を確認してから必要なものだけ取り出せます。</p>
 <p><a class="btn" href="https://apps.apple.com/jp/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_jp_seo&amp;mt=8">App Store で Zipbox 解凍：ZIP RAR 7z対応 を見る</a></p>
+<p><strong>Android をお使いですか？</strong></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&amp;referrer=utm_source%3Dbm_zipbox_jp_seo%26utm_campaign%3Dzipbox" rel="noopener" data-ls-play="cta">Google Play で Zipbox 解凍：ZIP RAR 7z対応 を見る</a></p>
 <p>Zipbox 解凍：ZIP RAR 7z対応 をお使いの方は、App Store で評価やレビューを書くことができます。 <a href="https://apps.apple.com/app/id6806776579?action=write-review">レビューを書く</a></p>
 </div>
 <h2 id="faq">よくある質問</h2>

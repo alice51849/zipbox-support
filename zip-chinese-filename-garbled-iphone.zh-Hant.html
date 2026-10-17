@@ -39,12 +39,13 @@ a{color:var(--accent)}
 .helpdoc li{margin:.3em 0}
 @media print{.hd-nav,.cta,.hd-toc{display:none}body{background:#fff;color:#000}}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ZIP 解開後中文檔名變亂碼？iPhone 上的原因、處理方式與密碼保護壓縮檔的開法", "description": "在 iPhone 解開 Windows 傳來的 ZIP，中文檔名全變成亂碼？本頁說明亂碼的成因（檔名編碼）、怎麼確認內容沒壞、在 iPhone 上怎麼先預覽再取出並重新命名，以及遇到密碼保護的 ZIP、RAR、7z 該怎麼開。", "inLanguage": "zh-Hant", "mainEntityOfPage": "https://open.cait518.cc/zipbox-support/zip-chinese-filename-garbled-iphone.zh-Hant.html", "dateModified": "2026-10-15", "author": {"@type": "Organization", "name": "hourstag"}, "about": {"@type": "SoftwareApplication", "name": "Zipbox 解壓縮：RAR ZIP 7z", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://apps.apple.com/app/id6806776579"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ZIP 解開後中文檔名變亂碼？iPhone 上的原因、處理方式與密碼保護壓縮檔的開法", "description": "在 iPhone 解開 Windows 傳來的 ZIP，中文檔名全變成亂碼？本頁說明亂碼的成因（檔名編碼）、怎麼確認內容沒壞、在 iPhone 上怎麼先預覽再取出並重新命名，以及遇到密碼保護的 ZIP、RAR、7z 該怎麼開。", "inLanguage": "zh-Hant", "mainEntityOfPage": "https://open.cait518.cc/zipbox-support/zip-chinese-filename-garbled-iphone.zh-Hant.html", "dateModified": "2026-10-15", "author": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "publisher": {"@type": "Organization", "@id": "https://open.cait518.cc/ios-app-guide/#organization", "name": "Lumi Studio", "url": "https://open.cait518.cc/ios-app-guide/about.html"}, "about": {"@type": "SoftwareApplication", "name": "Zipbox 解壓縮：RAR ZIP 7z", "operatingSystem": "iOS", "applicationCategory": "UtilitiesApplication", "url": "https://apps.apple.com/app/id6806776579"}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant", "mainEntity": [{"@type": "Question", "name": "亂碼的檔案打開是正常的，為什麼？", "acceptedAnswer": {"@type": "Answer", "text": "因為壞的只是「名稱」的編碼，不是內容。重新命名就好。"}}, {"@type": "Question", "name": "內建「檔案」App 解開也會亂碼嗎？", "acceptedAnswer": {"@type": "Answer", "text": "會，而且解開後就是一堆亂碼檔名的檔案。先用能預覽的 App 看清楚再取出，比較不會搞混。"}}, {"@type": "Question", "name": "Zipbox 會自動把亂碼轉回中文嗎？", "acceptedAnswer": {"@type": "Answer", "text": "商店文案把「中文亂碼」列為處理範圍，但沒有描述自動轉換的細節；實際以 App 內顯示為準。可以確定的是它能先預覽內容，取出後可直接重新命名。"}}, {"@type": "Question", "name": "有密碼又亂碼的 RAR 能開嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以。Zipbox 支援 ZIP、RAR、7z 的密碼保護與分卷壓縮檔，輸入密碼後一樣能預覽、取出、重新命名。"}}, {"@type": "Question", "name": "檔案會不會被上傳到伺服器？", "acceptedAnswer": {"@type": "Answer", "text": "不會。Zipbox 不連網，13 種格式全都在裝置本機處理。"}}]}</script>
 </head>
 <body>
+<p class="first-party-disclosure" data-first-party-disclosure="banner" role="note" style="margin:0;padding:8px 16px;background:#f3f4f6;color:#1f2937;border-bottom:1px solid #d1d5db;font-size:13px;line-height:1.5;text-align:center">本站由這些 App 的開發者 Lumi Studio 營運，介紹的是我們自己的 App。</p>
 <main class="helpdoc">
-<nav class="hd-nav"><a href="./">支援首頁</a><a href="support.html">說明與常見問題</a><a href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_tw_seo&amp;mt=8">Zipbox 解壓縮：RAR ZIP 7z</a></nav>
+<nav class="hd-nav"><a href="./">支援首頁</a><a href="support.html">說明與常見問題</a><a href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_tw_seo&amp;mt=8">Zipbox 解壓縮：RAR ZIP 7z</a><a href="https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&amp;referrer=utm_source%3Dbm_zipbox_tw_seo%26utm_campaign%3Dzipbox" rel="noopener" data-ls-play="nav">Google Play</a></nav>
 <h1>ZIP 解開後中文檔名變亂碼？iPhone 上的原因與處理方式</h1>
 <p class="lede">先安心：<strong>檔名亂碼幾乎都不是檔案壞掉，只是檔名的「編碼」對不上</strong>。Windows 上用舊版工具壓縮的 ZIP，檔名常用繁中的 Big5 編碼存，iPhone 解開時用另一套方式讀，中文就變成一串看不懂的符號；檔案內容本身通常完好。下面說明怎麼確認、怎麼在 iPhone 上處理，最後順便講密碼保護壓縮檔的開法，因為這兩件事常常一起發生在同一封信的附件上。</p>
 <p><strong>本頁目錄</strong></p>
@@ -62,6 +63,8 @@ a{color:var(--accent)}
 <div class="cta">
 <p><strong>想直接在 iPhone 上做？</strong> Zipbox 讓你先看壓縮檔內容再取出，亂碼檔名直接在手機上重新命名，密碼保護的 ZIP、RAR、7z 也能開，全部在裝置本機處理。</p>
 <p><a class="btn" href="https://apps.apple.com/tw/app/id6806776579?pt=118326163&amp;ct=bm_zipbox_tw_seo&amp;mt=8">在 App Store 查看 Zipbox 解壓縮：RAR ZIP 7z</a></p>
+<p><strong>使用 Android？</strong></p>
+<p><a class="btn" href="https://play.google.com/store/apps/details?id=com.alice51849.Zipbox&amp;referrer=utm_source%3Dbm_zipbox_tw_seo%26utm_campaign%3Dzipbox" rel="noopener" data-ls-play="cta">在 Google Play 查看 Zipbox 解壓縮：RAR ZIP 7z</a></p>
 <p>已經在用 Zipbox 解壓縮：RAR ZIP 7z？可以到 App Store 留下評分或評論。 <a href="https://apps.apple.com/app/id6806776579?action=write-review">撰寫評論</a></p>
 </div>
 <h2 id="faq">常見問題</h2>
